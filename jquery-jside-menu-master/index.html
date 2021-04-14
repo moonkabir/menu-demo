@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/jside-menu.css">
+</head>
+<body>
+<button class="menu-trigger"> <i class="material-icons">menu</i> </button>
+<div class="menu-body visibility">
+    <nav class="menu-container">
+        <ul class="menu-items">
+            <li><a href="#1"> <i class="material-icons">widgets</i>  Main item one </a></li> 
+            <li><a href="#1"> <i class="material-icons">bar_chart</i> Main item two </a></li>
+            <li class="has-sub"> <span class="dropdown-heading"> <i class="material-icons">collections</i> Item three with dropdown </span> 
+                <ul> 
+                    <li> <a href="#2"><img src="1.png" alt="">dropdown sub item 1 </a> </li>
+                    <li> <a href="#2"> dropdown sub item 2 </a> </li>
+                    <li> <a href="#2"> dropdown sub item 3 </a> </li>
+                    <li> <a href="#2"> dropdown sub item 4 </a> </li>
+                    <li> <a href="#2"> dropdown sub item 5 </a> </li>
+                    <li> <a href="#2"> dropdown sub item 6 </a> </li>
+                    <li> <a href="#2"> dropdown sub item 7 </a> </li>
+                </ul> 
+            </li>
+            <li class="has-sub"> <span class="dropdown-heading"> <i class="material-icons">camera</i>  Item four with dropdown </span> 
+                <ul> 
+                    <li> <a href="#2">sub item 1 </a> </li>
+                    <li> <a href="#2">sub item 2 </a> </li>
+                    <li> <a href="#2">sub item 3 </a> </li>
+                    <li> <a href="#2">sub item 4 </a> </li>
+                </ul> 
+            </li>
+            <li> <a href="#1">  <i class="material-icons">color_lens</i>  Main item four </a></li> 
+            <li> <a href="#1">  <i class="material-icons">pie_chart</i>  Main item five </a></li> 
+            <li>  <a href="#1">  <i class="material-icons">highlight</i> Main item five </a></li> 
+            <li> <a href="#1"> <i class="material-icons">format_size</i>  Main item six </a></li> 
+        </ul>
+    </nav>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.jside.menu.js"></script>
+<script>
+    $(function(){
+    $(".menu-container").jSideMenu({
+        jSidePosition: "position-left", //possible options position-left or position-right
+        jSideSticky: true, // menubar will be fixed on top, false to set static
+        jSideSkin: "default-skin", // to apply custom skin, just put its name in this string
+        });
+    }); 
+</script>
+</body>
+</html>
+<!-- 
+<ul id="menu-mainmenu-1" class="nav navbar-nav header-menu" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1571 nav-item"><a itemprop="url" href="http://localhost/merchshark/my-account/" class="nav-link menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="24" height="24" src="http://localhost/merchshark/wp-content/uploads/2021/04/Maerker-24x24.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><span class="menu-image-title-after menu-image-title">Mærker</span></span></a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1572 nav-item"><a itemprop="url" href="http://localhost/merchshark/checkout/" class="nav-link"><span itemprop="name">Legetøj</span></a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1573 nav-item"><a itemprop="url" href="http://localhost/merchshark/cart/" class="nav-link"><span itemprop="name">Figurer</span></a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1574 nav-item"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1574"><span itemprop="name">Tøj</span></a>
+    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1574">
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1754 nav-item"><a itemprop="url" href="#" class="dropdown-item"><span itemprop="name">Some Page</span></a></li>
+    </ul>
+    </li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1581 nav-item"><a itemprop="url" href="#" class="nav-link"><span itemprop="name">Gaming udstyr</span></a></li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1582 nav-item"><a itemprop="url" href="#" class="nav-link"><span itemprop="name">Bamser</span></a></li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1583 nav-item"><a itemprop="url" href="#" class="nav-link"><span itemprop="name">Skoleudstyr</span></a></li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1584 nav-item"><a itemprop="url" href="#" class="nav-link"><span itemprop="name">Diverse</span></a></li>
+    <li class="tilbud menu-item menu-item-type-custom menu-item-object-custom menu-item-1585 nav-item"><a itemprop="url" href="#" class="nav-link"><span itemprop="name">Tilbud</span></a></li>
+    <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-menu-item active menu-item-1759 nav-item"><a itemprop="url" href="http://localhost/merchshark/product-category/caviar/" class="nav-link" aria-current="page"><span itemprop="name">Caviar</span></a></li>
+</ul> -->

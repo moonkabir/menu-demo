@@ -1,0 +1,134 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 2;
+    color: #7e7e7e;
+}
+.container {
+    margin: 0 auto;
+    width: 1140px;
+}
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+.d-flex {
+    display: flex;
+}
+.jcsb {
+    justify-content: space-between;
+}
+.aic {
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+.menu ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu a {
+    display: block;
+    color: #292929;
+    text-decoration: none;
+}
+.menu a:hover,
+.menu a.active{
+    color: #ee3333;
+}
+.main-menu h2 {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.main-menu a {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.ico-menu {
+    margin-right: 30px;
+}
+.ico-menu a {
+    padding: 0 18px;
+    position: relative;
+}
+.ico-menu span {
+    font-size: 11px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ee3333;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    line-height: 20px;
+    top: -6px;
+    right: 2px;
+}
+.main-menu::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: #cccccc;
+    right: 0;
+    align-self: center;
+    margin: 0 22px 0 25px;
+}
+.main-menu>li>a {
+    padding: 40px 20px;
+}
+.main-menu>li:hover .dropdown {
+    opacity: 1;
+    display: block;
+}
+.main-menu>li:hover .mega-menu {
+    opacity: 1;
+    display: flex;
+}
+.main-menu>li {
+    position: relative;
+}
+.dropdown,.mega-menu{
+    background-color: #2e2e2e;
+    border-top: 4px solid #ee3333;
+    display: none;
+    opacity: 0;
+    margin-left: 20px;
+    position: absolute;
+    transition: all 0.35s ease-in-out;
+}
+.dropdown {
+    min-width: 200px;
+}
+.dropdown-2 {
+    min-width: 250px;
+}
+
+.main-menu > li .dropdown a:hover{
+   color: #ee3333;
+}
+.main-menu>li .dropdown a {
+    padding: 15px 40px;
+    color: #ffffff;
+}
+.mega-menu {
+    min-width: 630px;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.mega-menu a {
+    color: #ffffff;
+    padding: 15px 20px;
+}
+.ico-menu {
+    margin-right: 30px;
+}
+
+
